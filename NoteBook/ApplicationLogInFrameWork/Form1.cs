@@ -11,17 +11,15 @@ using System.Windows.Forms;
 
 namespace NoteBook{
     public partial class Form1 : Form {
-        public Form1()
-        {
+        private Button b;
+        private Timer t;
+        public Form1() {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
-            this.Size = new Size(1500, 800);
+            this.Size = new Size(500, 400);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.Load += new EventHandler(this.CustomForm_Load);
-            RoundPanel p = new RoundPanel(50, ColorTranslator.FromHtml("#00B4D8"),ColorTranslator.FromHtml("#023E8A"));
-            p.BackColor = Color.Black;
-            p.SetBounds(100,100,400,300);
-            this.Controls.Add(p);
+
         }
 
         private void CustomForm_Load(object sender, EventArgs e) {
