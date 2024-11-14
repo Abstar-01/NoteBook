@@ -12,6 +12,7 @@
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
         <Deterministic>true</Deterministic>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,6 +53,7 @@
         <Compile Include="ApplicationLogInFrameWork\Form1.Designer.cs">
           <DependentUpon>Form1.cs</DependentUpon>
         </Compile>
+        <Compile Include="ApplicationLogInFrameWork\LoginInformationBackgroundModel.cs" />
         <Compile Include="ApplicationLogInFrameWork\LoginPanel.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
