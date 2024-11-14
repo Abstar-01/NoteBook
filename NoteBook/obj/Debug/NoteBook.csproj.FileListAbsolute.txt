@@ -1,0 +1,10 @@
+C:\Users\user\RiderProjects\NoteBook\NoteBook\bin\Debug\NoteBook.exe.config
+C:\Users\user\RiderProjects\NoteBook\NoteBook\bin\Debug\NoteBook.exe
+C:\Users\user\RiderProjects\NoteBook\NoteBook\bin\Debug\NoteBook.pdb
+C:\Users\user\RiderProjects\NoteBook\NoteBook\obj\Debug\NoteBook.csproj.AssemblyReference.cache
+C:\Users\user\RiderProjects\NoteBook\NoteBook\obj\Debug\NoteBook.Properties.Resources.resources
+C:\Users\user\RiderProjects\NoteBook\NoteBook\obj\Debug\NoteBook.csproj.GenerateResource.cache
+C:\Users\user\RiderProjects\NoteBook\NoteBook\obj\Debug\NoteBook.csproj.CoreCompileInputs.cache
+C:\Users\user\RiderProjects\NoteBook\NoteBook\obj\Debug\NoteBook.exe
+C:\Users\user\RiderProjects\NoteBook\NoteBook\obj\Debug\NoteBook.pdb
+C:\Users\user\RiderProjects\NoteBook\NoteBook\obj\Debug\NoteBook.Form1.resources
