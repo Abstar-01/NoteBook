@@ -9,11 +9,6 @@ public class LoginInformationBackgroundModel {
         
     }
 
-    // public static void Main(string[] args) {
-    //     LoginInformationBackgroundModel lib = new LoginInformationBackgroundModel();
-    //     lib.NewAccount();
-    // }
-
     public void SearchAccount() {
         using (SqlConnection con = new SqlConnection(connection)) {
             try {
