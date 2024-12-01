@@ -26,7 +26,56 @@ namespace NoteBook{
             pane.SetBounds(-1,-1,1201,672);
             pane.BackColor = Color.FromArgb(0, 0, 0, 0);
 
+            
+            // Closing Button 
+            RoundPanel closePalne = new RoundPanel(30, Color.FromArgb(208,27,1), Color.FromArgb(208,27,1));
+            closePalne.SetBounds(1150,20,32,32);
+            Image close = Image.FromFile("C:\\Users\\user\\RiderProjects\\NoteBook\\NoteBook\\Images and Icons\\Icons\\Close.png");
+            Label closeLabel = new Label();
+            closeLabel.SetBounds(2,2,30,30);
+            closeLabel.BackColor = Color.Transparent;
+            closeLabel.Image = close;
+            closeLabel.Parent = closePalne;
+            closeLabel.TabStop = true;
+            closePalne.Controls.Add(closeLabel);
+            
+            closeLabel.Click += (sender, args) => {
+                Close();
+            };
+            backgroundImageLable.Controls.Add(closePalne);
+            
+            // Minimizing button 
+            RoundPanel minPalne = new RoundPanel(30, Color.Transparent, Color.Transparent);
+            minPalne.SetBounds(1110,20,32,32);
+            minPalne.BackColor = Color.Transparent;
+            Image mini = Image.FromFile("C:\\Users\\user\\RiderProjects\\NoteBook\\NoteBook\\Images and Icons\\Icons\\Horizontal Line.png");
+            Label miniLabel = new Label();
+            miniLabel.SetBounds(2,2,30,30);
+            miniLabel.BackColor = Color.Transparent;
+            miniLabel.Image = mini;
+            miniLabel.Parent = closePalne;
+            miniLabel.TabStop = true;
+            minPalne.Controls.Add(miniLabel);
 
+            miniLabel.Click += (sender, args) => {
+                WindowState = FormWindowState.Minimized;
+            };
+            backgroundImageLable.Controls.Add(minPalne);
+            
+            // Question button 
+            RoundPanel qPanel = new RoundPanel(30, Color.Transparent, Color.Transparent);
+            qPanel.SetBounds(1070,20,32,32);
+            qPanel.BackColor = Color.Transparent;
+            Image Q = Image.FromFile("C:\\Users\\user\\RiderProjects\\NoteBook\\NoteBook\\Images and Icons\\Icons\\Question Mark.png");
+            Label QLabel = new Label();
+            QLabel.SetBounds(2,2,30,30);
+            QLabel.BackColor = Color.Transparent;
+            QLabel.Image = Q;
+            QLabel.Parent = qPanel;
+            QLabel.TabStop = true;
+            qPanel.Controls.Add(QLabel);
+            backgroundImageLable.Controls.Add(qPanel);
+            
             backgroundImageLable.Controls.Add(pane);
             this.Controls.Add(backgroundImageLable);
             
@@ -57,6 +106,9 @@ namespace Rounded
         int radius;
         private Color start, end;
 
+        public Color Start { get; set;}
+        public Color End { get; set;}
+        
         public RoundPanel(int radius, Color start, Color end) {
             this.radius = radius;
             this.start = start;

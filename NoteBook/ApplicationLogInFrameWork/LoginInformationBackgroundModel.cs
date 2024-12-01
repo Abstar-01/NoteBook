@@ -9,10 +9,10 @@ public class LoginInformationBackgroundModel {
         
     }
 
-    public static void Main(string[] args) {
-        LoginInformationBackgroundModel lib = new LoginInformationBackgroundModel();
-        lib.NewAccount();
-    }
+    // public static void Main(string[] args) {
+    //     LoginInformationBackgroundModel lib = new LoginInformationBackgroundModel();
+    //     lib.NewAccount();
+    // }
 
     public void SearchAccount() {
         using (SqlConnection con = new SqlConnection(connection)) {
@@ -37,12 +37,12 @@ public class LoginInformationBackgroundModel {
                 string usr = "TnTen";
                 string phone = "2";
                 
-                    string s = "SELECT UserName, PhoneNumber FROM UserInformation";
+                    string s = "SELECT UserName FROM UserInformation";
                     SqlCommand com = new SqlCommand(s,con);
                     
                     using (SqlDataReader reader = com.ExecuteReader()) {
                         while (reader.Read()) {
-                            if (usr == reader.GetString(0) || phone == reader.GetString(1)) {
+                            if (usr == reader.GetString(0)) {
                                 check = true;
                                 break;
                             }
@@ -51,15 +51,13 @@ public class LoginInformationBackgroundModel {
 
                 if (!check) {
                     string inputing =
-                        "INSERT INTO UserInformation(UserName, FirstName, LastName, PhoneNumber, Email)" +
-                        "VALUES (@usr,@FN,@LN,@PN,@EM)";
+                        "INSERT INTO UserInformation(UserName, FirstName, LastName)" +
+                        "VALUES (@usr,@FN,@LN)";
                     using (SqlCommand cmd = new SqlCommand(inputing,con)) {
                         cmd.Parameters.AddWithValue("@usr", usr);
                         cmd.Parameters.AddWithValue("@FN", "Abel");
                         cmd.Parameters.AddWithValue("@LN", "Girma");
-                        cmd.Parameters.AddWithValue("@PN",phone);
-                        cmd.Parameters.AddWithValue("@EM", usr + "@gmail.com");
-
+                        
                         int rows = cmd.ExecuteNonQuery();
                         Console.WriteLine("Done");
                     }

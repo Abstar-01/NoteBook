@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="NoteBook_Authentication@DESKTOP-CKFILPO" uuid="770b0e15-271d-4afa-9d91-a4cd4c8a321b">
+    <data-source source="LOCAL" name="NoteBook_Authentication@DESKTOP-CKFILPO" uuid="ee97dd1c-18bc-462f-93c1-cd66d172c06c">
       <driver-ref>sqlserver.jb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>

@@ -55,6 +55,7 @@
         </Compile>
         <Compile Include="ApplicationLogInFrameWork\LoginInformationBackgroundModel.cs" />
         <Compile Include="ApplicationLogInFrameWork\LoginPanel.cs" />
+        <Compile Include="ApplicationLogInFrameWork\SignInPanel.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
         <EmbeddedResource Include="ApplicationLogInFrameWork\Form1.resx">
